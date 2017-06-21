@@ -1,0 +1,14 @@
+mixin head(scripts)
+    doctype html
+    html(lang='fr')
+        head
+            meta(charset='UTF-8')
+            title LOUIS VUITTON - Site Officiel France | LOUIS VUITTON
+            link(rel='stylesheet', href='/css/foundation.min.css')
+            link(rel='stylesheet', href='/css/style.css')
+            script(src="/javascript/services.js")
+            for script in scripts
+                script(src='/javascript/'+script)
+        if block
+            block
+

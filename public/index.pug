@@ -1,0 +1,25 @@
+include ./modules/head
+include ./modules/nav
++head([])
+    body
+        +navbar()
+        div.search
+            input(type="text", name='search', placeholder='Name')
+            button(href='#').hollow.button Search
+        table.hover
+            thead
+                tr
+                    th(width='200') Table Header
+                    th Table Header
+                    th(width='150') Table Header
+                    th(width='150') Table Header
+            tbody#list-user
+                each user in users
+                    tr
+                        td= user.name
+                        td= user.age
+                        td
+                            a(href='/detail.html?id='+user.id).hollow.button Show Details
+
+
+

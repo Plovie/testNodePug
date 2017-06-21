@@ -1,0 +1,26 @@
+{
+  "name": "testNodePug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plovie/testNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plovie/testNodePug/issues"
+  },
+  "homepage": "https://github.com/Plovie/testNodePug#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
