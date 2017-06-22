@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const movie = require('./app_server/controllers/users');
 
 const app = express();
+const env = app.get('env');
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");//allow everybody to make request
@@ -13,6 +14,12 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS', 'PATCH');// allow all of this path
     next();
 });
+
+// if(env === "development"){
+// app.set('./services',path.join(__dirname, '/services/local') )
+// }else{
+//
+// }
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

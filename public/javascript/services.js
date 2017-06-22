@@ -1,5 +1,5 @@
 let http = new XMLHttpRequest();
-
+console.log(http.header());
 
 function post(user){
     http.open("POST", 'http://localhost:3000/users', true);
